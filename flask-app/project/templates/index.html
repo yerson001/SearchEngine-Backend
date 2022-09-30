@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,800&display=swap');
+  :root{
+    --input_size:100vh;
+    --result_size:70vh;
+  }
+  *{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+  }
+  .logo-container {
+    display: flex;
+    height: var(--input_size);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color:#202124;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-input{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 20px;
+    /*background:transparent;*/
+    color: #fff;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    padding-left: 15px;
+    font-size: 3vh;
+  }
+  .logo span{
+    font-weight: 800;
+    font-size: 10vw;
+  }
+  .resultados-container{
+    margin-top: var(--input_size);
+    background-color: #e9ecef;
+    height: var(--result_size);
+  }
+  .search-button{
+    overflow: 0;
+    color: black;
+    padding-top: 1vh;
+    /*width: 200px;
+    height: 35px;*/
+    width: 25vw;
+    height: 4vh;
+  }
+  .search-button button{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: #303134;
+    color: #fff;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    font-size: 2vh;
+  }
+  .search-button button:hover{
+    border-color: #fff;
+  }
+</style>
+<!---->
+<html>
+  <head>
+    <title>Gugul</title>
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="logo">
+        <span style="color:#0086F9">G</span>
+        <span style="color:#FF4131">u</span>
+        <span style="color:#FEBD00">g</span>
+        <span style="color:#0086F9">u</span>
+        <span style="color:#01AB4B">l</span>
+      </div>
+      <form action="/new" class="search-container" method="post">
+          <input class="search-input" name="busqueda" type="text" placeholder="Busqueda">
+          <a class="search-button"><button>Buscar con Gugul</button></a>  
+      </form>
+      
+    </div>
+  </body>
+</html>
